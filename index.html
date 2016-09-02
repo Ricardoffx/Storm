@@ -4,6 +4,7 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
     <title>Stormsec - Ricardo Batista</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
   </head>
@@ -13,7 +14,7 @@
     <header>
     <div class="menu">
      <h1 class="float-l"> 
-        <a href="#" title="Stormsec - Ricardo Batista"><img src="img/logo.png" ></a>
+        <a href="#Home" class="scroll" title="Stormsec - Ricardo Batista"><img src="img/logo.png" ></a>
      </h1> 
       
       <input type="checkbox" id="control-nav" />
@@ -23,17 +24,18 @@
       <nav class="float-r">
         <ul class="list-auto">
           <li>
-            <a href="#Noticias" title="Noticias">Notícias</a>
+            <a href="#Noticias" class="scroll" title="Noticias">Notícias</a>
           </li>
           <li>
-            <a href="#Contato" title="Contato">Contato</a>
+            <a href="#Contato" class="scroll" title="Contato">Contato</a>
           </li>
         </ul>
       </nav>
       </div>
     </header>
 
-  <!--Home-->      
+  <!--Home-->
+  <div id="Home">      
   <figure>
     <span class="trs next"></span>
     <span class="trs prev"></span>
@@ -44,9 +46,9 @@
     </div>
     <figcaption></figcaption>
   </figure>
-
+</div>
   <!--Noticias-->
-   	<section id="Noticias" class="section">
+   	<section id="Noticias" class="noticia section">
 
       <p>
         <strong>Notícias</strong> Notícias.
@@ -82,28 +84,20 @@
     </section>
 
   	<!--Contato-->
-    <section id="Contato" class="section">
+    <section id="Contato" class="section contato">
     <div class="contato">
-  <h1>Form 01</h1>
+  <h1>Entre em contato</h1>
       <form id="form-contact" >
         <div class="input">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          <label for="name">Nome</label>
+          <input type="text" placeholder="Seu nome" required>
         </div>
         <div class="input">
           <label for="email">E-mail</label>
-          <input type="text" id="email" name="email" placeholder="Seu e-mail" required>
-        </div>
-        <div class="input">
-          <label for="phone">Phone</label>
-          <input type="text" id="phone" name="phone" maxlength="13" placeholder="Seu telefone" required>
-        </div>
-        <div class="input">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company" placeholder="Nome da sua empresa" required>
+          <input type="email" placeholder="Seu e-mail" required>
         </div>
         <div class="input txt">
-          <label for="message">Message</label>
+          <label for="message">Mensagem</label>
           <textarea id="message" name="message" cols="10" rows="5" placeholder="Escreva sua mensagem" required></textarea>
         </div>
         <div class="buttons">
@@ -111,7 +105,31 @@
           <input type="submit" value="Enviar" />
         </div>
       </form>
+Rio de Janeiro
+Rua José de Figueiredo, 320 - Bl. 4, Sl. 104 e 105,
+Un. 29 e 30 Condomínio comercial Office House 
+Barra da Tijuca, RJ - CEP: 22793-170 
+Office: +55 (21) 3734-0695
+
+New York 
+136 Madison Avenue, 5th Floor
+New York, NY 10016
+Office: +1 (646) 722 3838
+
+
+
       </div>
   	</section>
+
+    
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+  $(".scroll").click(function(event){   
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+  });
+});
+</script>
   </body>
 </html>

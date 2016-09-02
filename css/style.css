@@ -104,14 +104,19 @@ section p {
 }
 
 .section{
-height:800px;
+height:900px;
 
+}
+
+.contato{
+  background-color:#0E0E0E;
 }
 
 .noticia{
-  width:1200px;
-  margin: 0 auto;
+  background-color:#2b4757;
 }
+
+
 
 .highlights {
   position: relative;
@@ -453,7 +458,9 @@ form {
   margin: 0 auto;
   max-width: 850px;
   padding: 20px 10px;
-  background-color: rgba(255,255,255,0.4)
+  background-color: #E8EEEF;
+  border: 7px;
+  border-color: #2b4757 ;
 }
 
 form:after {

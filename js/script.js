@@ -74,3 +74,5 @@
         }
 
         window.addEventListener("load",setaImagem,false);
+
+
