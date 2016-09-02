@@ -73,6 +73,11 @@
 
         }
 
+        window.addEventListener("load",setaImagem,false);
+
+
+
+
 
         //Menu âncora
 
