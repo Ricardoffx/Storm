@@ -3,17 +3,17 @@
 
   <head>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/slide.css">
     <script src="js/script.js"></script>
+    <title>Stormsec - Ricardo Batista</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
   </head>
   <body>
 
   	<!--Header-->
-      <header>
+    <header>
     <div class="menu">
      <h1 class="float-l"> 
-        <a href="#" title="Titulo do Site"><img src="img/logo.png" ></a>
+        <a href="#" title="Stormsec - Ricardo Batista"><img src="img/logo.png" ></a>
      </h1> 
       
       <input type="checkbox" id="control-nav" />
@@ -46,7 +46,8 @@
   </figure>
 
   <!--Noticias-->
-   	<section id="Noticias">
+   	<section id="Noticias" class="section">
+
       <p>
         <strong>Notícias</strong> Notícias.
       </p>
@@ -60,7 +61,7 @@
           <p>Notícia1</p>
         </div>
         
-        <input type="radio" id="radio-img2" name="highlights" />
+        <input type="radio" id="radio-img2" name="highlights"  />
         <div class="highlights-item">
           <img src="img/noticia2.jpg" />
           <p>Notícia2</p>
@@ -80,14 +81,37 @@
       </div>
     </section>
 
-
-
-  </section>
-
   	<!--Contato-->
-  <section>
-  	
-
+    <section id="Contato" class="section">
+    <div class="contato">
+  <h1>Form 01</h1>
+      <form id="form-contact" >
+        <div class="input">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        </div>
+        <div class="input">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="input">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" maxlength="13" placeholder="Seu telefone" required>
+        </div>
+        <div class="input">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Nome da sua empresa" required>
+        </div>
+        <div class="input txt">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="10" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        </div>
+        <div class="buttons">
+          <span class="form-message"></span>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      </div>
   	</section>
   </body>
 </html>
